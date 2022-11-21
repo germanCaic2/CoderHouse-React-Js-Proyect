@@ -1,13 +1,19 @@
+:root {
+  --color-primary: rgb(53, 21, 132);
+  --color-secondary: rgb(29, 29, 29);
+}
+
+/* Standar configs */
 * {
   padding: 0;
   margin: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -17,18 +23,43 @@ code {
     monospace;
 }
 
+/* text */
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+h1,
+h2,
+h3,
+small {
+  color: var(--color-primary);
+}
+
+/* Background */
 .bg-dark {
   background-color: black !important;
 }
+
 .bg-secondary {
-  background-color: rgb(54, 54, 54) !important;
+  background-color: var(--color-secondary) !important;
 }
 
-#main {
-  background-image: url(../public/images/bg.jpg);
+/* section */
+#Main {
+  background-image: url(../public/images/bgAboutMe.jpg);
 }
 
-.glass{
+#Shop {
+  background-image: url(../public/images/bgShop.jpg);
+}
+
+#Footer {
+  background-image: url(../public/images/bgFooter.jpg);
+  background-repeat: inherit;
+}
+
+/* efects */
+.glass {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -36,6 +67,52 @@ code {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
+.shadowInset {
+  -webkit-box-shadow: inset -6px 55px 128px 22px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset -6px 55px 128px 22px rgba(0, 0, 0, 1);
+  box-shadow: inset -6px 55px 128px 22px rgba(0, 0, 0, 1);
+}
+
+.shadowInset-l {
+  -webkit-box-shadow: inset 0px 0px 102px -14px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px 0px 102px -14px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 0px 102px -14px rgba(0, 0, 0, 1);
+}
+
 .cardImg {
   height: 300px;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+/* buttoms */
+.btn-info {
+  background-color: var(--color-secondary) !important;
+}
+
+.btn-info:hover {
+  background-color: var(--color-primary) !important;
+}
+
+.btn-success {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-secondary);
+}
+
+.btn-cart {
+  background-color: rgb(156, 81, 174);
+  border-color: var(--color-secondary);
+}
+.btn-cart:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.btn-success:hover {
+  background-color: var(--color-secondary) !important;
+  border-color: var(--color-primary);
+}
+
+.border-purple {
+  border-color: var(--color-primary);
 }
