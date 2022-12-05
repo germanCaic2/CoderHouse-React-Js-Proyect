@@ -5,7 +5,7 @@ const ItemListContainer = ({greeting}) => {
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <div class="alert alert-success d-flex align-items-center" role="alert">
+                    <div className="alert alert-success d-flex align-items-center" role="alert">
                         <div>
                             {greeting}
                         </div>
