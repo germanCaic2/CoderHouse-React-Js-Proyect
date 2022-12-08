@@ -8,7 +8,7 @@ const Contact = () => {
 
       <div className="row">
         <div className="col-md-12 d-flex justify-content-center">
-          <div className="d-flex flex-column">
+          <div className="d-flex flex-column w-75">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Name</label>
               <input type="text" class="form-control border-purple" id="formName" placeholder="German Caicedo" />
