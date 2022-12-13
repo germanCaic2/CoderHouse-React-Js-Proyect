@@ -10,29 +10,24 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     const promise = new Promise((resolve, reject) => {
-      setTimeout(() =>{
+      setTimeout(() => {
         resolve(products);
       }, 2000);
     });
 
-    promise.then((data)=> {
+    promise.then((data) => {
       setItems(data);
     })
   });
 
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-md-12">
-          <div className="alert alert-success d-flex align-items-center" role="alert">
-            <div>
-              <ItemList items={items} />
-            </div>
-          </div>
-        </div>
+      <div>
+        <ItemList items={items} />
       </div>
       <ItemCount stock={10} />
     </div>
+
   );
 }
 

@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "name": "Articles",
-        "description": "Group of collectible technological items, includes glasses, mouse, keyboard, telephone and video game",
+        "name": "Articles retro edition",
+        "description": "Group of collectible technological 80's items, includes glasses, mouse, keyboard, telephone and video game",
         "image": "./images/articles.jpg",
         "price": 2300,
         "stock": 5,
@@ -30,7 +30,7 @@
         "id": 4,
         "name": "Console",
         "description": "Portable console in black and white colors, 2023 edition with 400 games and emulators",
-        "image": "./images/calculator.jpg",
+        "image": "./images/console.jpg",
         "price": 1100,
         "stock": 5,
         "category":"Consoles"
@@ -84,8 +84,26 @@
         "id": 10,
         "name": "Virtual reality mask",
         "description": "Virtual reality headset how to use, with immersive audio, comfortable with good connection for the best experience in simulations",
-        "image": "./images/calculator.jpg",
+        "image": "./images/vr-mask.jpg",
         "price": 2300,
+        "stock": 3,
+        "category":"Miscellaneous"
+    },
+    {
+        "id": 11,
+        "name": "Glass Monitor",
+        "description": "Television whit a glass skin, smart edition",
+        "image": "./images/tv.jpg",
+        "price": 1300,
+        "stock": 6,
+        "category":"Computers"
+    },
+    {
+        "id": 10,
+        "name": "Articles glass edition",
+        "description": "Group of collectible technological glass items, includes glasses, mouse, keyboard, telephone and video game",
+        "image": "./images/Articles-glass.jpg",
+        "price": 2500,
         "stock": 3,
         "category":"Miscellaneous"
     }

@@ -1,21 +1,23 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Main from "./components/Main";
-import Shop from "./components/Shop";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemListContainer from "./components/ItemListContainer";
+import Error404 from "./components/Error404";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-      <ItemListContainer greeting= {"Welcome to German Caicedo Proyect"} />
-      <Main />
-      <Shop />
-      <Contact />
+      <Routes>
+        <Route path={"/"} element={<ItemListContainer />} />
+        <Route path={"/category/:id"} element={<ItemListContainer />} />
+        <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+        <Route path={"*"} element={<Error404 />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 
