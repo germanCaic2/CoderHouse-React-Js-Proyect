@@ -5,13 +5,14 @@ import Footer from "./components/Footer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemListContainer from "./components/ItemListContainer";
 import Error404 from "./components/Error404";
+import MainRoute from "./components/MainRoute";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path={"/"} element={<ItemListContainer />} />
+        <Route path={"/"} element={<MainRoute />} />
         <Route path={"/category/:id"} element={<ItemListContainer />} />
         <Route path={"/item/:id"} element={<ItemDetailContainer />} />
         <Route path={"*"} element={<Error404 />} />
