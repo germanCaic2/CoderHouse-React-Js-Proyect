@@ -12,12 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  margin: 0;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
+} 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -52,10 +50,10 @@ small {
 #Shop {
   background-image: url(../public/images/bgShop.jpg);
 }
-
 #Footer {
   background-image: url(../public/images/bgFooter.jpg);
   background-repeat: inherit;
+  
 }
 
 /* efects */

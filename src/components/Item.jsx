@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Item = ({item}) => {
+const Item = ({ item }) => {
   return (
-      <div className="card p-3 shadow-lg m-2 glass">
+    <div className="card p-3 shadow-lg m-2 glass">
+      <Link to={"item/" + item.id }>
         <img className="img-fluid cardImg" src={item.image} alt={item.name} />
         <div className="card-body">
           <div className="text-center">
@@ -12,7 +14,8 @@ const Item = ({item}) => {
           <p className="card-text text-light">{item.description}</p>
           <button className="btn btn-success w-100">Buy now!</button>
         </div>
-      </div>
+      </Link>
+    </div>
   );
 
 }
