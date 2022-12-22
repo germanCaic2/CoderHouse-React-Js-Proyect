@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Articles retro edition",
         "description": "Group of collectible technological 80's items, includes glasses, mouse, keyboard, telephone and video game",
-        "image": "./images/articles.jpg",
+        "image": "../images/articles.jpg",
         "price": 2300,
         "stock": 5,
         "category":"Miscellaneous"
@@ -12,7 +12,7 @@
         "id": 2,
         "name": "Atari",
         "description": "Translucency portable console with 420 built-in games. 1gb memory",
-        "image": "./images/atari.jpg",
+        "image": "../images/atari.jpg",
         "price": 700,
         "stock": 10,
         "category":"Consoles"
@@ -21,7 +21,7 @@
         "id": 3,
         "name": "Calculator",
         "description": "Basic calculator with yellow and gray minimalist design, retro led",
-        "image": "./images/calculator.jpg",
+        "image": "../images/calculator.jpg",
         "price": 600,
         "stock": 15,
         "category":"Miscellaneous"
@@ -30,7 +30,7 @@
         "id": 4,
         "name": "Console",
         "description": "Portable console in black and white colors, 2023 edition with 400 games and emulators",
-        "image": "./images/console.jpg",
+        "image": "../images/console.jpg",
         "price": 1100,
         "stock": 5,
         "category":"Consoles"
@@ -39,7 +39,7 @@
         "id": 5,
         "name": "Keyboard Big",
         "description": "Folding portable backlit mechanical keyboard with macros and cherry mx black switches",
-        "image": "./images/keyboard-big.jpg",
+        "image": "../images/keyboard-big.jpg",
         "price": 1800,
         "stock": 5,
         "category":"Keyboards"
@@ -48,7 +48,7 @@
         "id": 6,
         "name": "Keyboard Numbers",
         "description": "Mechanical keyboard number portable",
-        "image": "./images/keyboard-num.jpg",
+        "image": "../images/keyboard-num.jpg",
         "price": 1050,
         "stock": 20,
         "category":"Keyboards"
@@ -57,7 +57,7 @@
         "id": 7,
         "name": "KeyCaps",
         "description": "keycaps with nintendo design to fully customize your keyboard",
-        "image": "./images/keycaps.jpg",
+        "image": "../images/keycaps.jpg",
         "price": 400,
         "stock": 5,
         "category":"Keyboards"
@@ -66,7 +66,7 @@
         "id": 8,
         "name": "IBM Computer",
         "description": "Very old computer of collection, functional 1gb of ram",
-        "image": "./images/pc.jpg",
+        "image": "../images/pc.jpg",
         "price": 3500,
         "stock": 5,
         "category":"Computers"
@@ -75,7 +75,7 @@
         "id": 9,
         "name": "Tiny Camera",
         "description": "Small camera useful for spying or recording good clips, 4k 120 fps 128 gbs of storage",
-        "image": "./images/tiny-camera.jpg",
+        "image": "../images/tiny-camera.jpg",
         "price": 1600,
         "stock": 20,
         "category":"Miscellaneous"
@@ -84,7 +84,7 @@
         "id": 10,
         "name": "Virtual reality mask",
         "description": "Virtual reality headset how to use, with immersive audio, comfortable with good connection for the best experience in simulations",
-        "image": "./images/vr-mask.jpg",
+        "image": "../images/vr-mask.jpg",
         "price": 2300,
         "stock": 3,
         "category":"Miscellaneous"
@@ -93,7 +93,7 @@
         "id": 11,
         "name": "Glass Monitor",
         "description": "Television whit a glass skin, smart edition",
-        "image": "./images/tv.jpg",
+        "image": "../images/tv.jpg",
         "price": 1300,
         "stock": 6,
         "category":"Computers"
@@ -102,7 +102,7 @@
         "id": 10,
         "name": "Articles glass edition",
         "description": "Group of collectible technological glass items, includes glasses, mouse, keyboard, telephone and video game",
-        "image": "./images/Articles-glass.jpg",
+        "image": "../images/Articles-glass.jpg",
         "price": 2500,
         "stock": 3,
         "category":"Miscellaneous"

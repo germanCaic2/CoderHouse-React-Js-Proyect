@@ -7,6 +7,7 @@ import Error404 from "./components/Error404";
 import MainRoute from "./components/MainRoute";
 import Shop from "./components/Shop";
 import Contact from "./components/Contact";
+import ItemDetailContainer from "./components/ItemDetailContainer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path={"/AboutUs"} element={<Main />} />
         <Route path={"/Shop"} element={<Shop />} />
         <Route path={"/Contact"} element={<Contact />} />
+        <Route path={"/item/:id"} element={<ItemDetailContainer />} />
         <Route path={"*"} element={<Error404 />} />
       </Routes>
       <Footer />

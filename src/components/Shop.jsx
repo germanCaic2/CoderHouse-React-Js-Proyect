@@ -1,5 +1,6 @@
 import React from "react";
 import ItemListContainer from "./ItemListContainer";
+import ShopCategories from "./ShopCategories";
 
 const Shop = () => {
   return (
@@ -10,8 +11,8 @@ const Shop = () => {
       </div>
       <section id="Shop" className="container-fluid bg-secondary shadowInset">
         <div className="container py-4">
+          <ShopCategories />
           <ItemListContainer />
-
         </div>
       </section>
     </div>
