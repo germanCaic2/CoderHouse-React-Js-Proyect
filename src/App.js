@@ -8,18 +8,20 @@ import MainRoute from "./components/MainRoute";
 import Shop from "./components/Shop";
 import Contact from "./components/Contact";
 import ItemDetailContainer from "./components/ItemDetailContainer";
+import ItemListContainer from "./components/ItemListContainer";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path={"/"} element={<MainRoute />} />
-        <Route path={"/AboutUs"} element={<Main />} />
-        <Route path={"/Shop"} element={<Shop />} />
-        <Route path={"/Contact"} element={<Contact />} />
-        <Route path={"/item/:id"} element={<ItemDetailContainer />} />
-        <Route path={"*"} element={<Error404 />} />
+        <Route exact path={"/"} element={<MainRoute />} />
+        <Route exact path={"/aboutUs"} element={<Main />} />
+        <Route exact path={"/shop"} element={<Shop />} />
+        <Route exact path={"/contact"} element={<Contact />} />
+        <Route exact path={"/category/:id"} element={<Shop />} />
+        <Route exact path={"/item/:id"} element={<ItemDetailContainer />} />
+        <Route exact path={"*"} element={<Error404 />} />
       </Routes>
       <Footer />
     </BrowserRouter>
