@@ -12,6 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  height: 100vh;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,6 +21,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 
 /* text */
 .text-primary {
@@ -53,7 +55,6 @@ small {
 #Footer {
   background-image: url(../public/images/bgFooter.jpg);
   background-repeat: inherit;
-  
 }
 
 /* efects */
