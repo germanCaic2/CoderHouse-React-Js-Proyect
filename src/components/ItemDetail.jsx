@@ -1,6 +1,19 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ item }) => {
+  const [itemStock, setItemStock] = useState(0);
+  
+  const onAdd = (quantity)=> {
+    setItemStock(itemStock - quantity);
+  }
+
+  useEffect(() => {
+    setItemStock(item.stock);
+  },[item]); 
+
   return (
     <div className="row p-5">
       <div className="col-md-6">
@@ -12,10 +25,9 @@ const ItemDetail = ({ item }) => {
           <h4 className="text-dark ">$ {item.price}</h4>
         </div>
         <p className="card-text text-dark">{item.description}</p>
-        <button className="btn btn-success w-100">Buy now!</button>
+        <ItemCount stock={item.stock} onAdd={onAdd} />
       </div>
     </div>
   );
-}
-
+} 
 export default ItemDetail;
