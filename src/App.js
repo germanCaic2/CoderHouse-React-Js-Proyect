@@ -8,7 +8,6 @@ import MainRoute from "./components/MainRoute";
 import Shop from "./components/Shop";
 import Contact from "./components/Contact";
 import ItemDetailContainer from "./components/ItemDetailContainer";
-import ItemListContainer from "./components/ItemListContainer";
 
 function App() {
   return (
@@ -27,5 +26,6 @@ function App() {
     </BrowserRouter>
   );
 }
+
 
 export default App;
