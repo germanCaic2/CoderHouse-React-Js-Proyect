@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { CartContext } from "./context/CartContext";
+import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ item }) => {
+  const {hi} = useContext(CartContext);
+  const [itemStock, setItemStock] = useState(0);
+  
+  const onAdd = (quantity)=> {
+    setItemStock(itemStock - quantity);
+    hi();
+  }
+
+  useEffect(() => {
+    setItemStock(item.stock);
+  },[item]); 
+
   return (
     <div className="row p-5">
       <div className="col-md-6">
@@ -12,10 +26,9 @@ const ItemDetail = ({ item }) => {
           <h4 className="text-dark ">$ {item.price}</h4>
         </div>
         <p className="card-text text-dark">{item.description}</p>
-        <button className="btn btn-success w-100">Buy now!</button>
+        <ItemCount stock={item.stock} onAdd={onAdd} />
       </div>
     </div>
   );
-}
-
+} 
 export default ItemDetail;
