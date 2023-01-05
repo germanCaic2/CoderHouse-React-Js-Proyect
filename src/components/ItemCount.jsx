@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const ItemCount = ({ stock }) => {
+const ItemCount = ({ stock, onAdd  }) => {
   const [counter, setCounter] = useState(1);
   const [itemStock, setItemStock] = useState(stock);
   const [soldOut, setSoldOut] = useState(false);
@@ -31,12 +31,6 @@ const ItemCount = ({ stock }) => {
     setItemStock(stock);
   }, [stock])
 
-  const onAdd = () => {
-    if (stock > 0) {
-      console.log("You added: " + counter + " products to the cart");
-    }
-  }
-
   return (
     <div>
       <div className="row">
@@ -53,4 +47,4 @@ const ItemCount = ({ stock }) => {
   );
 }
 
-export default ItemCount;
+export default ItemCount; 
