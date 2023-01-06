@@ -9,20 +9,22 @@ import Contact from "./components/Contact";
 import Error404 from "./components/Error404";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import CartContextProvider from "./components/context/CartContext";
+import Cart from "./components/Cart";
 
 function App() { 
   return (
     <CartContextProvider>
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route exact path={"/"} element={<MainRoute />} />
-          <Route exact path={"/aboutUs"} element={<Main />} />
-          <Route exact path={"/shop"} element={<Shop />} />
-          <Route exact path={"/contact"} element={<Contact />} />
-          <Route exact path={"/category/:id"} element={<Shop />} />
-          <Route exact path={"/item/:id"} element={<ItemDetailContainer />} />
-          <Route exact path={"*"} element={<Error404 />} />
+        <Routes> 
+          <Route path={"/"} element={<MainRoute />} />
+          <Route path={"/aboutUs"} element={<Main />} />
+          <Route path={"/shop"} element={<Shop />} />
+          <Route path={"/contact"} element={<Contact />} />
+          <Route path={"/category/:id"} element={<Shop />} />
+          <Route path={"/cart"} element={<Cart />} />
+          <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+          <Route path={"*"} element={<Error404 />} />
         </Routes>
         <Footer />
       </BrowserRouter> 

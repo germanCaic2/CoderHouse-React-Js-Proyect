@@ -12,7 +12,7 @@ const Item = ({ item }) => {
             <h4 className="text-light ">$ {item.price}</h4>
           </div>
           <p className="card-text text-light">{item.description}</p>
-          <button className="btn btn-success w-100">Buy now!</button>
+          <button className="btn btn-success w-100 animation item">Buy now!</button>
         </div>
       </Link>
     </div>

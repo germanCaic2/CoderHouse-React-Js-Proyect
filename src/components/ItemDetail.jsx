@@ -3,12 +3,12 @@ import { CartContext } from "./context/CartContext";
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ item }) => {
-  const {hi} = useContext(CartContext);
+  const {addItem} = useContext(CartContext);
   const [itemStock, setItemStock] = useState(0);
   
   const onAdd = (quantity)=> {
     setItemStock(itemStock - quantity);
-    hi();
+    addItem(item, quantity)
   }
 
   useEffect(() => {
@@ -31,4 +31,5 @@ const ItemDetail = ({ item }) => {
     </div>
   );
 } 
+
 export default ItemDetail;
