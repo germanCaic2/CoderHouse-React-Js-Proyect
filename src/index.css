@@ -8,15 +8,21 @@
   padding: 0;
   margin: 0;
 }
+
 html {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
   scroll-behavior: smooth;
 }
+
 body {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} 
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -52,6 +58,7 @@ small {
 #Shop {
   background-image: url(../public/images/bgShop.jpg);
 }
+
 #Footer {
   background-image: url(../public/images/bgFooter.jpg);
   background-repeat: inherit;
@@ -81,9 +88,11 @@ small {
 .cardImg {
   height: 300px;
 }
+
 .card:hover {
   transform: scale(1.1);
 }
+
 /* buttoms */
 .btn-info {
   background-color: var(--color-secondary) !important;
@@ -99,11 +108,12 @@ small {
 }
 
 .btn-cart {
-  background-color: rgb(156, 81, 174);
+  background-image: linear-gradient(to right top, #8d4797, #8653a9, #7b5eba, #6b6aca, #5376d8);
   border-color: var(--color-secondary);
 }
+
 .btn-cart:hover {
-  background-color: var(--color-secondary);
+  background-image: linear-gradient(to left bottom, #b875c2, #a385d2, #8e94da, #7ea0dd, #75aada);
   border-color: var(--color-secondary);
 }
 
@@ -114,4 +124,31 @@ small {
 
 .border-purple {
   border-color: var(--color-primary);
+}
+/* Animation */
+.item {
+  position: relative;
+}
+
+.item:before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  transition: all .3s;
+}
+
+.item:hover:before {
+  width: 100%;
+}
+
+.animation:before {
+  left: 50%;
+}
+
+.animation:hover:before {
+  left: 0;
 }
