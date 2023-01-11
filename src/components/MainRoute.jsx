@@ -11,7 +11,6 @@ const MainRoute = () => {
       <Contact />
     </div>
   )
-
 }
 
 export default MainRoute;

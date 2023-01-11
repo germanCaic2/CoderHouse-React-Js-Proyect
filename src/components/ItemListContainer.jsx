@@ -1,4 +1,5 @@
-import { addDoc, collection, doc, getDocs, getFirestore } from "firebase/firestore";
+import { queryByTestId } from "@testing-library/react";
+import { collection, getDocs, getFirestore, query, where } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "./ItemList";
@@ -10,11 +11,14 @@ const ItemListContainer = () => {
   useEffect(() => {
     const db = getFirestore();
     const itemsCollection = collection(db, "items");
-    getDocs(itemsCollection).then((product) => {
+
+    const q = id ? query(itemsCollection, where("category", "==", id)): itemsCollection;
+    
+    getDocs(q).then((product) => {
       setItems(product.docs.map((doc) => ({ id: doc.id, ...doc.data() })
-      ))
-    })
-  }, [])
+      ));
+    });
+  }, [id]);
 
 return (
     <div className="container">
