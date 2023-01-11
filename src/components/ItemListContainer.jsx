@@ -1,29 +1,24 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import { addDoc, collection, doc, getDocs, getFirestore } from "firebase/firestore";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "./ItemList";
-import products from "./json/products.json"
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
-  const {id} = useParams();
+  const { id } = useParams();
 
   useEffect(() => {
-    const promise = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(id ? products.filter(item => item.category === id) : products);
-      }, 2000);
-    });
-
-    promise.then((data) => {
-      setItems(data);
+    const db = getFirestore();
+    const itemsCollection = collection(db, "items");
+    getDocs(itemsCollection).then((product) => {
+      setItems(product.docs.map((doc) => ({ id: doc.id, ...doc.data() })
+      ))
     })
-  }, [id]);
+  }, [])
 
-  return (
+return (
     <div className="container">
-        <ItemList items={items} />
+      <ItemList items={items} />
     </div>
 
   );
