@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Articles retro edition",
         "description": "Group of collectible technological 80's items, includes glasses, mouse, keyboard, telephone and video game",
         "image": "../images/articles.jpg",
@@ -9,7 +8,6 @@
         "category":"Miscellaneous"
     },
     {
-        "id": 2,
         "name": "Atari",
         "description": "Translucency portable console with 420 built-in games. 1gb memory",
         "image": "../images/atari.jpg",
@@ -18,7 +16,6 @@
         "category":"Consoles"
     },
     {
-        "id": 3,
         "name": "Calculator",
         "description": "Basic calculator with yellow and gray minimalist design, retro led",
         "image": "../images/calculator.jpg",
@@ -27,7 +24,6 @@
         "category":"Miscellaneous"
     },
     {
-        "id": 4,
         "name": "Console",
         "description": "Portable console in black and white colors, 2023 edition with 400 games and emulators",
         "image": "../images/console.jpg",
@@ -36,7 +32,6 @@
         "category":"Consoles"
     },
     {
-        "id": 5,
         "name": "Keyboard Big",
         "description": "Folding portable backlit mechanical keyboard with macros and cherry mx black switches",
         "image": "../images/keyboard-big.jpg",
@@ -45,7 +40,6 @@
         "category":"Keyboards"
     },
     {
-        "id": 6,
         "name": "Keyboard Numbers",
         "description": "Mechanical keyboard number portable",
         "image": "../images/keyboard-num.jpg",
@@ -54,7 +48,6 @@
         "category":"Keyboards"
     },
     {
-        "id": 7,
         "name": "KeyCaps",
         "description": "keycaps with nintendo design to fully customize your keyboard",
         "image": "../images/keycaps.jpg",
@@ -63,7 +56,6 @@
         "category":"Keyboards"
     },
     {
-        "id": 8,
         "name": "IBM Computer",
         "description": "Very old computer of collection, functional 1gb of ram",
         "image": "../images/pc.jpg",
@@ -72,7 +64,6 @@
         "category":"Computers"
     },
     {
-        "id": 9,
         "name": "Tiny Camera",
         "description": "Small camera useful for spying or recording good clips, 4k 120 fps 128 gbs of storage",
         "image": "../images/tiny-camera.jpg",
@@ -81,7 +72,6 @@
         "category":"Miscellaneous"
     },
     {
-        "id": 10,
         "name": "Virtual reality mask",
         "description": "Virtual reality headset how to use, with immersive audio, comfortable with good connection for the best experience in simulations",
         "image": "../images/vr-mask.jpg",
@@ -90,7 +80,6 @@
         "category":"Miscellaneous"
     },
     {
-        "id": 11,
         "name": "Glass Monitor",
         "description": "Television whit a glass skin, smart edition",
         "image": "../images/tv.jpg",
@@ -99,7 +88,6 @@
         "category":"Computers"
     },
     {
-        "id": 10,
         "name": "Articles glass edition",
         "description": "Group of collectible technological glass items, includes glasses, mouse, keyboard, telephone and video game",
         "image": "../images/Articles-glass.jpg",
