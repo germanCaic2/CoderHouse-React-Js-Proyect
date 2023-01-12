@@ -12,13 +12,13 @@ const NavBar = () => {
         <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink className="nav-link text-primary" to={"/AboutUs"} activeclassname="page">About us</NavLink>
+              <NavLink className="nav-link text-primary hoverEffect" to={"/AboutUs"} activeclassname="page">About us</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-primary" to={"/Shop"} activeclassname="page">Shop</NavLink>
+              <NavLink className="nav-link text-primary hoverEffect" to={"/Shop"} activeclassname="page">Shop</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-primary" to={"/Contact"} activeclassname="page">Contact</NavLink>
+              <NavLink className="nav-link text-primary hoverEffect" to={"/Contact"} activeclassname="page">Contact</NavLink>
             </li>
           </ul>
         </div>
