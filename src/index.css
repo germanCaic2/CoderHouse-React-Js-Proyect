@@ -2,7 +2,6 @@
   --color-primary: rgb(53, 21, 132);
   --color-secondary: rgb(29, 29, 29);
 }
-
 /* Standar configs */
 * {
   padding: 0;
@@ -10,14 +9,10 @@
 }
 
 html {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
   scroll-behavior: smooth;
 }
 
 body {
-  height: 100vh;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,7 +22,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 
 /* text */
 .text-primary {
@@ -87,6 +81,7 @@ small {
 
 .cardImg {
   height: 300px;
+  border-radius: 15px;
 }
 
 .card:hover {
@@ -151,4 +146,50 @@ small {
 
 .animation:hover:before {
   left: 0;
+}
+
+/* hover animation */
+.hoverEffect {
+  background-image: linear-gradient(
+    to right,
+    #b875c2,
+    #5376d8 50%,
+    var(--color-primary) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.hoverEffect:before{
+  content: '';
+  background: var(--color-primary);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hoverEffect:hover {
+ background-position: 0;
+}
+
+.hoverEffect:hover::before{
+  width: 100%;
+}
+
+.ShopCategories {
+  background-image: linear-gradient(
+    to right,
+    #ce7aff,
+    #86e7ff 50%,
+    #ffffff 50%
+  ) !important;
 }

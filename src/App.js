@@ -2,14 +2,14 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Main from "./components/Main";
 import MainRoute from "./components/MainRoute";
 import Shop from "./components/Shop";
-import Contact from "./components/Contact";
 import Error404 from "./components/Error404";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import CartContextProvider from "./components/context/CartContext";
 import Cart from "./components/Cart";
+import AboutUs from "./components/AboutUs";
+import Contact from "./components/Contact";
 
 function App() { 
   return (
@@ -18,7 +18,7 @@ function App() {
         <Header />
         <Routes> 
           <Route path={"/"} element={<MainRoute />} />
-          <Route path={"/aboutUs"} element={<Main />} />
+          <Route path={"/aboutUs"} element={<AboutUs />} />
           <Route path={"/shop"} element={<Shop />} />
           <Route path={"/contact"} element={<Contact />} />
           <Route path={"/category/:id"} element={<Shop />} />
