@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { CartContext } from "./context/CartContext";
 import ItemCount from "./ItemCount";
+import Carousel from "./Carousel";
 
 const ItemDetail = ({ item }) => {
   const {addItem} = useContext(CartContext);
@@ -16,19 +17,21 @@ const ItemDetail = ({ item }) => {
   },[item]); 
 
   return (
-    <div className="row p-5">
-      <div className="col-md-6">
-        <img src={item.image} alt={item.name} className="img-fluid" />
-      </div>
-      <div className="col-md-4 pt-3 d-flex flex-column justify-content-center">
-        <div className="text-center">
-          <h3 className="text-dark bold">{item.name}</h3>
-          <h4 className="text-dark ">$ {item.price}</h4>
+      <div className="container">
+        <div className="row glasss m-0">
+            <div className="col-md-6 flex-end">
+              <img src={item.image} alt={item.name} className="img-fluid" />
+            </div>
+            <div className="col-md-4 d-flex flex-column justify-content-center">
+              <div className="text-center d-flex justify-content-around">
+                <h3 className="text-light bold">{item.name}</h3>
+                <h4 className="text-light ">$ {item.price}</h4>
+              </div>
+              <p className="card-text text-light">{item.description}</p>
+              <ItemCount stock={item.stock} onAdd={onAdd} />
+            </div>
+          </div>
         </div>
-        <p className="card-text text-dark">{item.description}</p>
-        <ItemCount stock={item.stock} onAdd={onAdd} />
-      </div>
-    </div>
   );
 } 
 
