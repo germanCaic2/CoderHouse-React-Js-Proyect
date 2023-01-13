@@ -1,6 +1,7 @@
 import { doc, getDoc, getFirestore } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Carousel from "./Carousel";
 import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = () => {
@@ -20,8 +21,11 @@ const ItemDetailContainer = () => {
   }, []);
 
   return (
-    <div className="container">
-      <ItemDetail item={item} />
+    <div>
+      <div id="Main" className="container-fluid">
+        <ItemDetail item={item} />
+      </div>
+      <Carousel />
     </div>
   );
 }

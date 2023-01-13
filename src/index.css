@@ -2,6 +2,7 @@
   --color-primary: rgb(53, 21, 132);
   --color-secondary: rgb(29, 29, 29);
 }
+
 /* Standar configs */
 * {
   padding: 0;
@@ -58,12 +59,24 @@ small {
   background-repeat: inherit;
 }
 
+#Slider {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
 /* efects */
 .glass {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glasss {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
@@ -120,6 +133,7 @@ small {
 .border-purple {
   border-color: var(--color-primary);
 }
+
 /* Animation */
 .item {
   position: relative;
@@ -150,12 +164,10 @@ small {
 
 /* hover animation */
 .hoverEffect {
-  background-image: linear-gradient(
-    to right,
-    #b875c2,
-    #5376d8 50%,
-    var(--color-primary) 50%
-  );
+  background-image: linear-gradient(to right,
+      #b875c2,
+      #5376d8 50%,
+      var(--color-primary) 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -165,7 +177,7 @@ small {
   transition: all 0.3s ease-in-out;
 }
 
-.hoverEffect:before{
+.hoverEffect:before {
   content: '';
   background: var(--color-primary);
   display: block;
@@ -178,18 +190,16 @@ small {
 }
 
 .hoverEffect:hover {
- background-position: 0;
+  background-position: 0;
 }
 
-.hoverEffect:hover::before{
+.hoverEffect:hover::before {
   width: 100%;
 }
 
 .ShopCategories {
-  background-image: linear-gradient(
-    to right,
-    #ce7aff,
-    #86e7ff 50%,
-    #ffffff 50%
-  ) !important;
+  background-image: linear-gradient(to right,
+      #ce7aff,
+      #86e7ff 50%,
+      #ffffff 50%) !important;
 }
