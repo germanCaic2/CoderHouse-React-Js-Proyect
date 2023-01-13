@@ -1,7 +1,6 @@
 import { collection, getDocs, getFirestore, } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useParams, Link} from "react-router-dom";
 
 const Carousel = () => {
   const [items, setItems] = useState([]);
@@ -14,22 +13,21 @@ const Carousel = () => {
       setItems(product.docs.map((doc) => ({ id: doc.id, ...doc.data() })
       ));
     });
+
+    const scrollContainer = document.getElementById("Slider");
+    scrollContainer.addEventListener("wheel", (a) => {
+      a.preventDefault();
+      scrollContainer.scrollLeft += a.deltaY;
+    });
   }, [id]);
 
-  const scrollContainer = document.getElementById("Slider");
-
-  scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-  });
-
   return (
-    <div id="Slider">
+    <div>
       <h1 className="text-center m-4"> Keep buying</h1>
-      <div className="row d-flex flex-nowrap">
+      <div id="Slider" className="row d-flex flex-nowrap ">
         {
           items.map(product =>
-            <div className="col-lg-4 col-md-6 col-sm-12">
+            <div className="col-lg-3 col-md-4 col-sm-12 mt-5">
               <div className="card p-3 shadow-lg m-1 glass">
                 <Link to={"/item/" + product.id} className="text-decoration-none text-center">
                   <img className="img-fluid cardImg" src={product.image} alt={product.name} />
