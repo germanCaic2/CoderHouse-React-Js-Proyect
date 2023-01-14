@@ -1,6 +1,7 @@
 :root {
   --color-primary: rgb(53, 21, 132);
   --color-secondary: rgb(29, 29, 29);
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Standar configs */
@@ -11,12 +12,23 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  min-height: 100%;
+  position: relative;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 code {
@@ -33,6 +45,7 @@ h1,
 h2,
 h3,
 small {
+  font-family: 'Montserrat', sans-serif;
   color: var(--color-primary);
 }
 
@@ -62,6 +75,10 @@ small {
 #Slider {
   overflow-y: hidden;
   overflow-x: scroll;
+}
+
+#Contact {
+  margin-bottom: 6rem;
 }
 
 /* efects */
@@ -202,4 +219,12 @@ small {
       #ce7aff,
       #86e7ff 50%,
       #ffffff 50%) !important;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.xx {
+  width: 200px;
 }
