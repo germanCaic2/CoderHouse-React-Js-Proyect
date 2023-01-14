@@ -4,7 +4,7 @@ import ShopCategories from "./ShopCategories";
 
 const Shop = () => {
   return (
-    <div>
+    <div className="mb-5">
       <div className="">
         <h2 className="text-center text-primary pt-4"><strong> S H O P </strong></h2>
         <hr className="text-primary pb-4"></hr>
