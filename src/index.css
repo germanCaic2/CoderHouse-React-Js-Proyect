@@ -1,6 +1,7 @@
 :root {
   --color-primary: rgb(53, 21, 132);
   --color-secondary: rgb(29, 29, 29);
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Standar configs */
@@ -11,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -33,6 +35,7 @@ h1,
 h2,
 h3,
 small {
+  font-family: 'Montserrat', sans-serif;
   color: var(--color-primary);
 }
 
@@ -202,4 +205,8 @@ small {
       #ce7aff,
       #86e7ff 50%,
       #ffffff 50%) !important;
+}
+
+.text-justify {
+  text-align: justify;
 }

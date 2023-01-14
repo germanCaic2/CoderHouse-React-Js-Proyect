@@ -23,7 +23,6 @@ const ShopCategories = () => {
               <NavLink className="nav-link ShopCategories hoverEffect" to={"/category/Consoles"} activeclassname="page" >Consoles</NavLink>
             </li>
           </ul>
-          <hr className="text-primary pb-4"></hr>
         </div>
       </div>
     </nav>

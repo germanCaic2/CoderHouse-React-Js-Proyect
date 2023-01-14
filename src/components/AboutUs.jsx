@@ -12,7 +12,7 @@ const AboutUs = () => {
           </div>
           <div className="col-md-6 col-12 d-flex justify-content-center flex-column">
             <h1 className="">About Us</h1>
-            <p className="lead"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet a dolor beatae labore sed alias voluptatem iure autem. Necessitatibus iusto facere quis tempore! Placeat blanditiis, provident sunt quisquam ducimus quam.</p>
+            <p className="lead text-justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet a dolor beatae labore sed alias voluptatem iure autem. Necessitatibus iusto facere quis tempore! Placeat blanditiis, provident sunt quisquam ducimus quam.</p>
           </div>
         </div>
       </div>
