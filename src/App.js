@@ -10,7 +10,7 @@ import CartContextProvider from "./components/context/CartContext";
 import Cart from "./components/Cart";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
-import Finish from "./Finish";
+import Finish from "./components/Finish";
 
 function App() { 
   return (

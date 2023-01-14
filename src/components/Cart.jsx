@@ -52,7 +52,7 @@ const Cart = () => {
                 <td colSpan={2}>&nbsp;</td>
                 <td><b>Total:</b></td>
                 <td><b>$ {priceTotal()}</b></td>
-                <td className="text-end"><Link to="/finish" className="btn btn-success item animation"> Finish punchase</Link></td>
+                <td className="text-end"><Link to="/finish" onClick={clear} className="btn btn-success item animation"> Finish punchase</Link></td>
               </tr>
             </tbody>
           </table>
