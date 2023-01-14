@@ -18,7 +18,7 @@ const ItemDetailContainer = () => {
         console.log("Item dont exists")
       }
     })
-  }, []);
+  }, [id]);
 
   return (
     <div>

@@ -10,6 +10,7 @@ import CartContextProvider from "./components/context/CartContext";
 import Cart from "./components/Cart";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
+import Finish from "./Finish";
 
 function App() { 
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path={"/category/:id"} element={<Shop />} />
           <Route path={"/cart"} element={<Cart />} />
           <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+          <Route path={"/finish"} element={<Finish />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
         <Footer />
